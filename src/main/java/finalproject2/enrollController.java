@@ -152,5 +152,21 @@ private ObservableList<Course> getCourses() {
         stage.setMaximized(true);
         stage.show();
     }
+    
+    @FXML
+    public void goEnroll(ActionEvent event) throws IOException {
+        System.out.println("pressed");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/finalproject2/enrollment.fxml"));
+        Parent root = loader.load();
+        enrollController controller = loader.getController();
+        System.out.println("Setting this ID: " + userID + userPass + userName + userCourse);
+        controller.setUserInfo(this.userID, this.userPass, this.userName, this.userCourse);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setMaximized(true);
+        stage.show();
+
+    }
 
 }

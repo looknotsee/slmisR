@@ -123,18 +123,18 @@
     -fx-font-weight: bold;
 }
 
-.enrollSelTab{
+.enrollSelTab{	
 	-fx-background-color: #a98539;
 	-fx-border-color: #a98539;
-	-fx-background-radius:  0px 30px 0px 30px;
-	-fx-border-radius: 0px 30px 0px 30px;
+	-fx-background-radius: 50px;
+	-fx-border-radius: 50px;
 }
 
 .enrollSelTab:hover{
 	-fx-background-color: #1b2e5c;
 	-fx-border-color: #1b2e5c;
 	-fx-font-weight: bold;
-	-fx-border-radius: 0px 30px 0px 30px;
+	-fx-border-radius: 50px;
 }
 
 .enrollCourseCart{
