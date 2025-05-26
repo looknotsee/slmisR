@@ -57,7 +57,7 @@
             </Button>
             <Button id="Pbutton" fx:id="dashEnrButton" layoutX="27.0" layoutY="554.0" mnemonicParsing="false" onAction="#goFinance" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15px;" styleClass="Pbutton" stylesheets="@application.css">
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="20.0" fitWidth="20.0" onKeyPressed="#goFinance" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@homescreenAssets/finance.png" />
                      </image>

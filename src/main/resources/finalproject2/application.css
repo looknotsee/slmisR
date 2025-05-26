@@ -152,4 +152,36 @@
 	-fx-border-radius: 25px;
 }
 
+#financePayTab .tab{
+	-fx-background-color: #a98539;
+	-fx-background-radius: 0px 10px 0px 0px;
+    -fx-border-color: transparent;
+    -fx-padding: 10 20 10 20;
+}
+
+#financePayTab .tab:selected{
+	-fx-background-color: #1b2e5c;
+	-fx-font-weight: bold;
+	-fx-border-color: #a98539 #a98539 transparent #a98539;
+	-fx-border-radius: 0px 10px 0px 0px;
+	-fx-border-width: 2px;
+}
+
+#financePayTab .tab .tab-label{
+	-fx-text-fill: #FFF;
+	-fx-font-family: Corbel;
+	-fx-font-size: 20px;
+}
+
+.tab-pane .tab-header-background{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+
+.tab-pane .tab-content-area{
+	-fx-border-color: #a98539;
+	-fx-border-width: 2px;
+	-fx-border-radius: 10px 10px 25px 25px;
+}
+
 

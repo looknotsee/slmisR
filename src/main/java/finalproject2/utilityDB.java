@@ -30,6 +30,7 @@ public class utilityDB {
 		
 		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		stage.setTitle(title);
+		stage.setMaximized(true);
 		stage.setScene(new Scene(root));
 		stage.show();
 	}

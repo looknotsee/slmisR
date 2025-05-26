@@ -3,7 +3,9 @@ package finalproject2;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -11,6 +13,9 @@ import javafx.stage.Stage;
 public class financeScreenController {
 
 private String userID;
+private String userPass;
+private String userName;
+private String userCourse;
 
 public void setUserID(String userID) {
        this.userID = userID;
@@ -37,6 +42,24 @@ public void setUserID(String userID) {
               stage.setMaximized(true);
               stage.show();  
  
+       }
+       
+       @FXML
+       public void goHome(ActionEvent event) throws IOException {
+           System.out.println("pressed");
+           FXMLLoader loader = new FXMLLoader(getClass().getResource("/finalproject2/homeScreen.fxml"));
+           Parent root = loader.load();
+
+           homeScreenController controller = loader.getController();
+           System.out.println("This id will be set: " + userID); 
+           controller.setUserInfo(this.userID, this.userPass, this.userName, this.userCourse); 
+           controller.refreshSchedule();
+
+           Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+           stage.setScene(new Scene(root));
+           stage.setMaximized(true);
+           stage.show();
+
        }
 
 }
