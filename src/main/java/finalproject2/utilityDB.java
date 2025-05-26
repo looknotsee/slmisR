@@ -18,18 +18,12 @@ public class utilityDB {
 			try {
 				FXMLLoader loader = new FXMLLoader(utilityDB.class.getResource(fxml));
 				root = loader.load();
-				homeScreenController controller = loader.getController();
-				controller.setUserInfo(userID, userPass, userName, userCourse);
+				Object controller = loader.getController();
+				if (controller instanceof userInfoReceiver) {
+					((userInfoReceiver) controller).setUserInfo(userID, userPass, userName, userCourse);
+				}
 			}
 			catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-			
-		else {
-			try {
-				root = FXMLLoader.load(utilityDB.class.getResource("/finalproject2/homeScreen.fxml"));
-			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}

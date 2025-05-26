@@ -20,17 +20,36 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class enrollController implements Initializable {
+public class enrollController implements Initializable, userInfoReceiver{
+
+@FXML
+private Label dashUserCourse;
+
+@FXML
+private Label dashUserName;
 
 private String userID;
+private String userPass;
+private String userName;
+private String userCourse;
 
-public void setUserID(String userID) {
+
+
+@Override
+public void setUserInfo(String userID, String userPass, String userName, String userCourse) {
     this.userID = userID;
+    this.userPass = userPass;
+    this.userName = userName;
+    this.userCourse = userCourse;
+    dashUserName.setText(userName);
+    dashUserCourse.setText(userCourse);
 }
+
 
 @FXML
 private ListView<Course> courseListView;
@@ -109,7 +128,7 @@ private ObservableList<Course> getCourses() {
 
         homeScreenController controller = loader.getController();
         System.out.println("This id will be set: " + userID); 
-        controller.setUserID(this.userID); 
+        controller.setUserInfo(this.userID, this.userPass, this.userName, this.userCourse); 
         controller.refreshSchedule();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

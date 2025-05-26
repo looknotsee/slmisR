@@ -23,7 +23,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class homeScreenController {
+public class homeScreenController implements userInfoReceiver {
 
     @FXML
     private AnchorPane AnchorPane;
@@ -50,6 +50,9 @@ public class homeScreenController {
     private TabPane mainTabs;
     
     private String userID;
+    private String userPass;
+    private String userName;
+    private String userCourse;
 
     @FXML
     public void initialize() {
@@ -70,19 +73,20 @@ public class homeScreenController {
         );
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
     
+    @Override
     public void setUserInfo(String userID, String userPass, String userName, String userCourse) {
     	this.userID = userID;
+        this.userPass = userPass;
+        this.userName = userName;
+        this.userCourse = userCourse;
     	dashUserName.setText(userName);
     	dashUserID.setText(userID + "@my.xu.edu.ph");
     	dashUserCourse.setText(userCourse);
     	
     	dashSched.setItems(getScheduleData("Monday"));
     }
-    
+
     public ObservableList<schedule> getScheduleData(String tabDay) {
         ObservableList<schedule> list = FXCollections.observableArrayList();
         try {
@@ -117,8 +121,8 @@ public class homeScreenController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/finalproject2/enrollment.fxml"));
         Parent root = loader.load();
         enrollController controller = loader.getController();
-        System.out.println("Setting this ID: " + userID);
-        controller.setUserID(this.userID);
+        System.out.println("Setting this ID: " + userID + userPass + userName + userCourse);
+        controller.setUserInfo(this.userID, this.userPass, this.userName, this.userCourse);
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
