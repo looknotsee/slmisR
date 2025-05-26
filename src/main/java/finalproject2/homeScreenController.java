@@ -49,6 +49,15 @@ public class homeScreenController implements userInfoReceiver {
     @FXML
     private TabPane mainTabs;
     
+    @FXML 
+    private TableView<grades> dashGradeTable;
+    
+    @FXML 
+    private TableColumn<grades, String> dashGradeClass;
+    
+    @FXML 
+    private TableColumn<grades, String> dashGradeScore;
+    
     private String userID;
     private String userPass;
     private String userName;
@@ -58,6 +67,8 @@ public class homeScreenController implements userInfoReceiver {
     public void initialize() {
         dashSchedClass.setCellValueFactory(new PropertyValueFactory<>("className"));
         dashSchedTime.setCellValueFactory(new PropertyValueFactory<>("classTime"));
+        dashGradeClass.setCellValueFactory(new PropertyValueFactory<>("className"));
+        dashGradeScore.setCellValueFactory(new PropertyValueFactory<>("gradeScore"));
 
         mainTabs.getSelectionModel().selectedItemProperty().addListener(
             (obs, oldTab, newTab) -> {
@@ -85,6 +96,7 @@ public class homeScreenController implements userInfoReceiver {
     	dashUserCourse.setText(userCourse);
     	
     	dashSched.setItems(getScheduleData("Monday"));
+    	dashGradeTable.setItems(getGrades());
     }
 
     public ObservableList<schedule> getScheduleData(String tabDay) {
@@ -109,6 +121,28 @@ public class homeScreenController implements userInfoReceiver {
             e.printStackTrace();
         }
         return list;
+    }
+    
+    public ObservableList<grades> getGrades(){
+    	ObservableList<grades> list = FXCollections.observableArrayList();
+    	
+    	try {
+    		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/slmis2", "root", "");
+    		String sql = "SELECT c.className, g.gradeScore FROM grades g JOIN classes c ON g.classID = c.classID WHERE g.userID = ?";
+    		PreparedStatement stmt = conn.prepareStatement(sql);
+    		stmt.setString(1, userID);
+    		ResultSet rs = stmt.executeQuery();
+    		while (rs.next()) {
+				list.add(new grades(
+					rs.getString("className"),
+					rs.getString("gradeScore")
+				));
+			}
+    		conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+    	}
+    	return list;
     }
 
     public void refreshSchedule() {

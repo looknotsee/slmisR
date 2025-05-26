@@ -16,231 +16,236 @@
 
 <AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject2.homeScreenController">
    <children>
-      <Pane id="dashGradPane" layoutX="183.0" layoutY="48.0" prefHeight="240.0" prefWidth="1128.0" style="-fx-background-radius: 24px;" styleClass="dashGradPane" stylesheets="@application.css">
+      <Pane prefHeight="1080.0" prefWidth="298.0" styleClass="dashGradPane" stylesheets="@application.css">
          <children>
-            <Label fx:id="dashUserName" layoutX="56.0" layoutY="49.0" text="Student Name" textFill="WHITE">
-               <font>
-                  <Font name="Corbel Bold" size="65.0" />
-               </font>
-            </Label>
-            <Label fx:id="dashUserID" layoutX="58.0" layoutY="121.0" text="000000@email.com" textFill="WHITE">
-               <font>
-                  <Font name="Corbel" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="dashUserCourse" layoutX="58.0" layoutY="144.0" text="BSXXX" textFill="WHITE">
-               <font>
-                  <Font name="Corbel" size="24.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <Pane layoutX="49.0" layoutY="48.0" prefHeight="966.0" prefWidth="112.0" style="-fx-background-radius: 24px;" styleClass="dashGradPane" stylesheets="@application.css">
-         <children>
-            <Button id="Pbutton" fx:id="dashAcadButton" layoutX="27.0" layoutY="374.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15px;" styleClass="Pbutton" stylesheets="@application.css">
+            <Button id="Pbutton" fx:id="dashFinButton" layoutX="75.0" layoutY="244.0" mnemonicParsing="false" onAction="#goEnroll" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15px;" styleClass="Pbutton" stylesheets="@application.css">
                <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@homescreenAssets/Academics.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button id="Pbutton" fx:id="dashFinButton" layoutX="27.0" layoutY="464.0" mnemonicParsing="false" onAction="#goEnroll" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15px;" styleClass="Pbutton" stylesheets="@application.css">
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@homescreenAssets/enrollment.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button id="Pbutton" fx:id="dashEnrButton" layoutX="27.0" layoutY="554.0" mnemonicParsing="false" onAction="#goFinance" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15px;" styleClass="Pbutton" stylesheets="@application.css">
+            <Button id="Pbutton" fx:id="dashEnrButton" layoutX="75.0" layoutY="321.0" mnemonicParsing="false" onAction="#goFinance" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 15px;" styleClass="Pbutton" stylesheets="@application.css">
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" onKeyPressed="#goFinance" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="30.0" fitWidth="30.0" onKeyPressed="#goFinance" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@homescreenAssets/finance.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <ImageView fitHeight="79.0" fitWidth="94.0" layoutX="9.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="134.0" fitWidth="159.0" layoutX="33.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@homescreenAssets/XU_logo_type_ver_2.png" />
                </image>
             </ImageView>
          </children></Pane>
-      <Pane layoutX="1332.0" layoutY="48.0" prefHeight="483.0" prefWidth="542.0" style="-fx-background-radius: 24px;" styleClass="dashGradPane" stylesheets="@application.css">
+      <Pane layoutX="232.0" prefHeight="1080.0" prefWidth="1688.0" style="-fx-background-radius: 50px 0px 0px 50px; -fx-background-color: #efefef;">
          <children>
-            <ScrollPane hbarPolicy="NEVER" layoutX="22.0" layoutY="20.0" prefHeight="444.0" prefWidth="499.0">
-               <content>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <Pane prefHeight="952.0" prefWidth="502.0">
-                           <children>
-                              <Text fill="WHITE" layoutX="19.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memorandum">
-                                 <font>
-                                    <Font name="Corbel Bold" size="36.0" />
-                                 </font>
-                              </Text>
-                              <Pane layoutX="18.0" layoutY="71.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo1" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="18.0" layoutY="191.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo1" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo11" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="18.0" layoutY="311.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo1" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo12" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="18.0" layoutY="431.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo11" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo111" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="18.0" layoutY="551.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo1" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo13" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="18.0" layoutY="671.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo11" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo112" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="18.0" layoutY="791.0" prefHeight="98.0" prefWidth="442.0" styleClass="dashMemoButton" stylesheets="@application.css">
-                                 <children>
-                                    <Label fx:id="dashMemo12" layoutX="22.0" layoutY="18.0" text="Announcement" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel Bold" size="30.0" />
-                                       </font>
-                                    </Label>
-                                    <Label fx:id="dashMemo121" layoutX="22.0" layoutY="48.0" text="Something something" textFill="WHITE">
-                                       <font>
-                                          <Font name="Corbel" size="20.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                              <Label layoutX="177.0" layoutY="908.0" text="Nothing else to see here~" textFill="WHITE">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </Pane>
-                     </children>
-                  </AnchorPane>
-               </content>
-            </ScrollPane>
-         </children></Pane>
-      <Pane layoutX="1332.0" layoutY="548.0" prefHeight="483.0" prefWidth="542.0" style="-fx-background-radius: 24px;" styleClass="dashGradPane" stylesheets="@application.css">
-         <children>
-            <TabPane fx:id="mainTabs" layoutX="21.0" layoutY="81.0" prefHeight="384.0" prefWidth="499.0" styleClass="tab" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE">
-              <tabs>
-                <Tab id="Monday" fx:id="mondayTab" text="Mon" />
-                  <Tab id="Tuesday" fx:id="tuesdayTab" text="Tue">
-                     <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-                     </content>
-                  </Tab>
-                  <Tab id="Wednesday" fx:id="wednesdayTab" text="Wed">
-                     <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-                     </content>
-                  </Tab>
-                  <Tab id="Thursday" fx:id="thursdayTab" text="Thurs">
-                     <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-                     </content>
-                  </Tab>
-                  <Tab id="Friday" fx:id="fridayTab" text="Fri">
-                     <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-                     </content>
-                  </Tab>
-                  <Tab id="Saturday" fx:id="saturdayTab" text="Sat">
-                     <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-                     </content>
-                  </Tab>
-              </tabs>
-            </TabPane>
-            <Text fill="WHITE" layoutX="40.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Schedule">
-               <font>
-                  <Font name="Corbel Bold" size="36.0" />
-               </font>
-            </Text>
-            <Pane layoutX="32.0" layoutY="140.0" prefHeight="312.0" prefWidth="480.0">
+            <Pane layoutX="72.0" layoutY="562.0" prefHeight="449.0" prefWidth="1038.0" style="-fx-background-radius: 50px;" styleClass="dashGradPane" stylesheets="@application.css">
                <children>
-                  <TableView fx:id="dashSched" prefHeight="308.0" prefWidth="473.0" style="-fx-background-radius: 0px 0px 25px 25px;" stylesheets="@application.css">
+                  <Text fill="WHITE" layoutX="70.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grades">
+                     <font>
+                        <Font name="Dubai Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="dashGradeTable" layoutX="61.0" layoutY="103.0" prefHeight="288.0" prefWidth="921.0">
                     <columns>
-                      <TableColumn fx:id="dashSchedClass" prefWidth="248.0" text="Class" />
-                      <TableColumn fx:id="dashSchedTime" minWidth="0.0" prefWidth="225.0" text="Time" />
+                      <TableColumn fx:id="dashGradeClass" prefWidth="459.0" text="C1" />
+                      <TableColumn fx:id="dashGradeScore" prefWidth="451.0" text="C2" />
                     </columns>
                   </TableView>
                </children>
             </Pane>
-         </children>
-      </Pane>
+            <Pane id="dashGradPane" layoutX="72.0" layoutY="128.0" prefHeight="209.0" prefWidth="1038.0" style="-fx-background-radius: 50px;" styleClass="dashGradPane" stylesheets="@application.css">
+               <children>
+                  <Label fx:id="dashUserName" layoutX="94.0" layoutY="35.0" text="Student Name" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Bold" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dashUserID" layoutX="96.0" layoutY="103.0" text="000000@email.com" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dashUserCourse" layoutX="96.0" layoutY="120.0" text="BSXXX" textFill="WHITE">
+                     <font>
+                        <Font name="Dubai Regular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="1172.0" layoutY="564.0" prefHeight="449.0" prefWidth="412.0" style="-fx-background-radius: 50px;" styleClass="dashGradPane" stylesheets="@application.css">
+               <children>
+                  <TabPane fx:id="mainTabs" layoutX="21.0" layoutY="81.0" prefHeight="352.0" prefWidth="375.0" styleClass="tab" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab id="Monday" fx:id="mondayTab" text="Mon" />
+                        <Tab id="Tuesday" fx:id="tuesdayTab" text="Tue">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab id="Wednesday" fx:id="wednesdayTab" text="Wed">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab id="Thursday" fx:id="thursdayTab" text="Thurs">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab id="Friday" fx:id="fridayTab" text="Fri">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab id="Saturday" fx:id="saturdayTab" text="Sat">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+                  <Text fill="WHITE" layoutX="40.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Schedule">
+                     <font>
+                        <Font name="Dubai Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="26.0" layoutY="140.0" prefHeight="284.0" prefWidth="364.0">
+                     <children>
+                        <TableView fx:id="dashSched" prefHeight="282.0" prefWidth="353.0" style="-fx-background-radius: 0px 0px 50px 50px; -fx-border-radius: 0px 0px 50px 50px;" stylesheets="@application.css">
+                          <columns>
+                            <TableColumn fx:id="dashSchedClass" prefWidth="170.0" text="Class" />
+                            <TableColumn fx:id="dashSchedTime" minWidth="0.0" prefWidth="175.0" resizable="false" text="Time" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="1168.0" layoutY="122.0" prefHeight="413.0" prefWidth="412.0" style="-fx-background-radius: 50px;" styleClass="dashGradPane" stylesheets="@application.css">
+               <children>
+                  <Text fill="WHITE" layoutX="40.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memorandum">
+                     <font>
+                        <Font name="Dubai Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="17.0" layoutY="82.0" prefHeight="322.0" prefWidth="397.0" style="-fx-background-radius: 24px;" stylesheets="@application.css">
+                     <content>
+                        <AnchorPane prefHeight="448.0" prefWidth="382.0">
+                           <children>
+                              <Pane prefHeight="540.0" prefWidth="382.0">
+                                 <children>
+                                    <Pane layoutX="19.0" layoutY="17.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
+                                       <children>
+                                          <Label fx:id="dashMemo" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Regular" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="107.0" layoutY="498.0" prefWidth="161.0" text="Nothing else to see here~" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="19.0" layoutY="137.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
+                                       <children>
+                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="dashMemo11" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Regular" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="19.0" layoutY="257.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
+                                       <children>
+                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="dashMemo12" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Regular" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="19.0" layoutY="377.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
+                                       <children>
+                                          <Label fx:id="dashMemo11" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="dashMemo111" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                             <font>
+                                                <Font name="Dubai Regular" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Text fill="#464646" layoutX="116.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font name="Dubai Bold" size="25.0" />
+               </font>
+            </Text>
+            <Pane id="dashGradPane" layoutX="72.0" layoutY="366.0" prefHeight="169.0" prefWidth="224.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 50px;" stylesheets="@application.css">
+               <children>
+                  <Label layoutX="43.0" layoutY="20.0" text="Clearance" textFill="#1b2e5c">
+                     <font>
+                        <Font name="Dubai Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="76.0" fitWidth="81.0" layoutX="72.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@homescreenAssets/clearanceCheck.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="dashGradPane" layoutX="322.0" layoutY="366.0" prefHeight="169.0" prefWidth="788.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 50px;" stylesheets="@application.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="18.0" text="Exam Schedule" textFill="#1b2e5c">
+                     <font>
+                        <Font name="Dubai Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Pane id="dashGradPane" layoutX="27.0" layoutY="73.0" prefHeight="75.0" prefWidth="726.0" style="-fx-background-radius: 24px 50px 50px 24px; -fx-background-color: #a98539;" stylesheets="@application.css">
+                     <children>
+                        <Label layoutX="295.0" layoutY="19.0" text="No exams ongoing~" textFill="#cfcfcf">
+                           <font>
+                              <Font name="Dubai Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children></Pane>
    </children>
 </AnchorPane>
