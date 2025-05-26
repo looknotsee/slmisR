@@ -1,0 +1,134 @@
+.dashGradPane{
+	-fx-background-color: linear-gradient(to bottom, #14285a, #364977);
+}
+	
+.loginButton{
+	-fx-background-color:  #3a53a4;
+}
+
+.loginButton:hover{
+	-fx-background-color: #a98539;	
+}
+
+.Pbutton{
+	-fx-background-color: transparent;
+}
+
+.Pbutton:hover{
+	-fx-background-color: #a98539;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-radius: 50px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical, .scroll-bar:horizontal{
+	-fx-background-color: transparent;
+	-fx-padding: 0;
+	-fx-pref-width: 8px;
+}
+
+.scroll-bar .track{
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+}
+
+.scroll-bar .thumb{
+	-fx-background-color: #a98539;
+	-fx-background-radius: 10px;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+	-fx-background-color: transparent;
+	-fx-padding: 0;
+	-fx-shape: "";
+}
+
+.dashMemoButton{
+	-fx-background-color:  #a98539;
+	-fx-border-color:  #a98539;
+	-fx-border-radius: 0px;
+	-fx-background-radius: 0px;
+}
+
+.dashMemoButton:hover{
+	-fx-background-color: linear-gradient(to bottom, #a98539, transparent);
+	-fx-border-color: linear-gradient(to bottom, #a98539, transparent);
+}
+
+#mainTabs .tab{
+	-fx-background-color: #a98539;
+	-fx-background-radius: 0px 10px 0px 0px;
+    -fx-border-color: transparent;
+    -fx-padding: 10 20 10 20;
+}
+
+#mainTabs .tab:selected{
+	-fx-background-color: #1b2e5c;
+	-fx-font-weight: bold;
+	-fx-border-color: #a98539 #a98539 transparent #a98539;
+	-fx-border-radius: 0px 10px 0px 0px;
+	-fx-border-width: 2px;
+}
+
+#mainTabs .tab .tab-label{
+	-fx-text-fill: #FFF;
+	-fx-font-family: Corbel;
+	-fx-font-size: 20px;
+}
+
+.tab-pane .tab-header-background{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+
+.tab-pane .tab-content-area{
+	-fx-border-color: #a98539;
+	-fx-border-width: 2px;
+	-fx-border-radius: 10px 10px 25px 25px;
+}
+
+.table-view .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Corbel;
+    -fx-font-size: 20px;
+}
+
+.enrollSelTab{
+	-fx-background-color: #a98539;
+	-fx-border-color: #a98539;
+	-fx-background-radius:  0px 30px 0px 30px;
+	-fx-border-radius: 0px 30px 0px 30px;
+}
+
+.enrollSelTab:hover{
+	-fx-background-color: #1b2e5c;
+	-fx-border-color: #1b2e5c;
+}

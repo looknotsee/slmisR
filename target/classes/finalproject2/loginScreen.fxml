@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject2.loginController">
+   <children>
+      <Pane layoutX="712.0" layoutY="270.0" prefHeight="576.0" prefWidth="737.0" style="-fx-border-radius: 0px 20px 20px 0px; -fx-background-radius: 0px 20px 20px 0px; -fx-background-color: #FFF; -fx-border-color: #3a53a4;">
+         <children>
+            <TextField fx:id="loginIDTxt" layoutX="280.0" layoutY="258.0" prefHeight="48.0" prefWidth="260.0" promptText="ID" style="-fx-background-color: #FFF; -fx-border-radius: 10px; -fx-border-color: #3a53a4;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="loginPassTxt" layoutX="280.0" layoutY="316.0" prefHeight="48.0" prefWidth="260.0" promptText="Password" style="-fx-background-color: #FFF; -fx-border-radius: 10px; -fx-border-color: #3a53a4;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button id="loginButton" fx:id="loginButton" layoutX="346.0" layoutY="395.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="128.0" style="-fx-cursor: hand; -fx-background-radius: 50px;" styleClass="loginButton" stylesheets="@application.css" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" offsetY="1.0" radius="4.75" width="0.0">
+                     <color>
+                        <Color red="0.5138888955116272" green="0.5729166865348816" blue="0.75" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="107.0" fitWidth="419.0" layoutX="202.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@loginAssets/XU_Logotype_Color.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="loginLabel" layoutX="285.0" layoutY="368.0" text="Please enter credentials." textFill="#808080">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+               <color>
+                  <Color red="0.5248000025749207" green="0.5555199980735779" blue="0.6399999856948853" opacity="0.7137404680252075" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="440.0" layoutY="270.0" prefHeight="576.0" prefWidth="382.0" style="-fx-background-color: #3a53a4; -fx-background-radius: 20px 50px 50px 20px;">
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+               <color>
+                  <Color red="0.5248000025749207" green="0.5555199980735779" blue="0.6399999856948853" opacity="0.7137404680252075" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
