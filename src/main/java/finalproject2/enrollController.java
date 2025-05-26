@@ -137,5 +137,20 @@ private ObservableList<Course> getCourses() {
         stage.show();
 
     }
+    
+    @FXML
+    public void goFinance(ActionEvent event) throws IOException {
+        System.out.println("pressed finance");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/finalproject2/financeScreen.fxml"));
+        Parent root = loader.load();
+        financeScreenController controller = loader.getController();
+        System.out.println("Setting this ID for finance:" + userID);
+        controller.setUserID(this.userID);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setMaximized(true);
+        stage.show();
+    }
 
 }
