@@ -49,12 +49,12 @@
                         <Font name="Dubai Bold" size="50.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dashUserID" layoutX="96.0" layoutY="103.0" text="000000@email.com" textFill="WHITE">
+                  <Label fx:id="dashUserID" layoutX="96.0" layoutY="103.0" text="000000@email.com" textFill="#cdcdcd">
                      <font>
                         <Font name="Dubai Regular" size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dashUserCourse" layoutX="96.0" layoutY="120.0" text="BSXXX" textFill="WHITE">
+                  <Label fx:id="dashUserCourse" layoutX="96.0" layoutY="120.0" text="BSXXX" textFill="#cdcdcd">
                      <font>
                         <Font name="Dubai Regular" size="15.0" />
                      </font>
@@ -97,12 +97,12 @@
                         <ListView fx:id="selCourseListView" prefHeight="644.0" prefWidth="486.0" style="-fx-background-radius: 50px;" />
                      </children>
                   </VBox>
-                  <Button layoutX="114.0" layoutY="751.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="75.0" styleClass="enrollCourseCart" stylesheets="@application.css" text="Clear" textFill="WHITE">
+                  <Button layoutX="113.0" layoutY="751.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="75.0" styleClass="enrollCourseCart" stylesheets="@application.css" text="Clear" textFill="WHITE">
                      <font>
                         <Font name="Corbel" size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="209.0" layoutY="751.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="86.0" styleClass="enrollCourseCart" stylesheets="@application.css" text="Confirm" textFill="WHITE">
+                  <Button layoutX="208.0" layoutY="751.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="109.0" styleClass="enrollCourseCart" stylesheets="@application.css" text="Confirm" textFill="WHITE">
                      <font>
                         <Font name="Corbel" size="15.0" />
                      </font>

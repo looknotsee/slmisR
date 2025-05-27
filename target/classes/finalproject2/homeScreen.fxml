@@ -66,12 +66,12 @@
                         <Font name="Dubai Bold" size="50.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dashUserID" layoutX="96.0" layoutY="103.0" text="000000@email.com" textFill="WHITE">
+                  <Label fx:id="dashUserID" layoutX="96.0" layoutY="103.0" text="000000@email.com" textFill="#cdcdcd">
                      <font>
                         <Font name="Dubai Regular" size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="dashUserCourse" layoutX="96.0" layoutY="120.0" text="BSXXX" textFill="WHITE">
+                  <Label fx:id="dashUserCourse" layoutX="96.0" layoutY="120.0" text="BSXXX" textFill="#cdcdcd">
                      <font>
                         <Font name="Dubai Regular" size="15.0" />
                      </font>
@@ -142,14 +142,14 @@
                                  <children>
                                     <Pane layoutX="19.0" layoutY="17.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
                                        <children>
-                                          <Label fx:id="dashMemo" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                          <Label fx:id="dashMemo" layoutX="22.0" layoutY="15.0" text="Uniform Policy Suspension" textFill="WHITE">
                                              <font>
                                                 <Font name="Dubai Bold" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="41.0" text="OSA" textFill="WHITE">
                                              <font>
-                                                <Font name="Dubai Regular" size="24.0" />
+                                                <Font name="Dubai Regular" size="18.0" />
                                              </font>
                                           </Label>
                                        </children>
@@ -161,42 +161,42 @@
                                     </Label>
                                     <Pane layoutX="19.0" layoutY="137.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
                                        <children>
-                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="15.0" text="Office Closed" textFill="WHITE">
                                              <font>
                                                 <Font name="Dubai Bold" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="dashMemo11" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                          <Label fx:id="dashMemo11" layoutX="22.0" layoutY="39.0" text="VP Admin" textFill="WHITE">
                                              <font>
-                                                <Font name="Dubai Regular" size="24.0" />
+                                                <Font name="Dubai Regular" size="18.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </Pane>
                                     <Pane layoutX="19.0" layoutY="257.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
                                        <children>
-                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                          <Label fx:id="dashMemo1" layoutX="22.0" layoutY="15.0" text="Food Pantry for Finals" textFill="WHITE">
                                              <font>
                                                 <Font name="Dubai Bold" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="dashMemo12" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                          <Label fx:id="dashMemo12" layoutX="22.0" layoutY="39.0" text="Xavier University Libraries (XUL)" textFill="WHITE">
                                              <font>
-                                                <Font name="Dubai Regular" size="24.0" />
+                                                <Font name="Dubai Regular" size="18.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </Pane>
                                     <Pane layoutX="19.0" layoutY="377.0" prefHeight="98.0" prefWidth="328.0" style="-fx-background-radius: 24px; -fx-border-radius: 24px;" styleClass="dashMemoButton" stylesheets="@application.css">
                                        <children>
-                                          <Label fx:id="dashMemo11" layoutX="22.0" layoutY="15.0" text="Announcement" textFill="WHITE">
+                                          <Label fx:id="dashMemo11" layoutX="22.0" layoutY="15.0" text="Office Closed" textFill="WHITE">
                                              <font>
                                                 <Font name="Dubai Bold" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="dashMemo111" layoutX="22.0" layoutY="37.0" text="Something something" textFill="WHITE">
+                                          <Label fx:id="dashMemo111" layoutX="22.0" layoutY="39.0" text="Math Department" textFill="WHITE">
                                              <font>
-                                                <Font name="Dubai Regular" size="24.0" />
+                                                <Font name="Dubai Regular" size="18.0" />
                                              </font>
                                           </Label>
                                        </children>
@@ -235,7 +235,7 @@
                         <Font name="Dubai Bold" size="30.0" />
                      </font>
                   </Label>
-                  <Pane id="dashGradPane" layoutX="27.0" layoutY="73.0" prefHeight="75.0" prefWidth="726.0" style="-fx-background-radius: 24px 50px 50px 24px; -fx-background-color: #a98539;" stylesheets="@application.css">
+                  <Pane id="dashGradPane" layoutX="27.0" layoutY="73.0" prefHeight="75.0" prefWidth="726.0" style="-fx-background-radius: 50px; -fx-background-color: #a98539;" stylesheets="@application.css">
                      <children>
                         <Label layoutX="295.0" layoutY="19.0" text="No exams ongoing~" textFill="#cfcfcf">
                            <font>

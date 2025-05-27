@@ -82,7 +82,7 @@
 #mainTabs .tab .tab-label{
 	-fx-text-fill: #FFF;
 	-fx-font-family: Dubai;
-	-fx-font-size: 15px;
+	-fx-font-size: 13px;
 }
 
 .tab-pane .tab-header-background{
@@ -114,12 +114,40 @@
     -fx-background-color: transparent;
 }
 
-#dashSched .table-cell {
+#dashGradeTable {
+    -fx-background-color: #a98539;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-padding: 10;
+    -fx-font-family: "Dubai";
+    -fx-font-size: 20px;
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+#dashGradeTable .column-header-background {
+    -fx-background-color: white;
+    -fx-background-radius: 50 50 0 0;
+}
+
+#dashGradeTable .column-header,
+#dashGradeTable .filler {
+    -fx-background-color: white;
+    -fx-text-fill: #a98539;
+    -fx-font-weight: bold;
+}
+
+#dashGradeTable .table-row-cell {
     -fx-background-color: transparent;
-    -fx-text-fill: #FFF;
-    -fx-font-family: Dubai;
-    -fx-font-size: 10px;
-    -fx-padding: 10px;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-padding: 6 12;
+}
+
+#dashGradeTable .table-row-cell:filled:selected,
+#dashGradeTable .table-row-cell:filled:selected:focused {
+    -fx-background-color: white;
+    -fx-text-fill: #a98539;
     -fx-font-weight: bold;
 }
 
@@ -132,7 +160,7 @@
 
 .enrollSelTab:hover{
 	-fx-background-color: #1b2e5c;
-	-fx-border-color: #1b2e5c;
+	-fx-border-color: #a98539;
 	-fx-font-weight: bold;
 	-fx-border-radius: 50px;
 }
@@ -142,14 +170,18 @@
 	-fx-border-color: #a98539;
 	-fx-background-radius: 25px;
 	-fx-border-radius: 25px;
+	-fx-font-family: Dubai;
+	-fx-font-size: 20px;
 }
 
 .enrollCourseCart:hover{
 	-fx-background-color: #1b2e5c;
-	-fx-border-color: #1b2e5c;
+	-fx-border-color: #a98539;
 	-fx-font-weight: bold;
 	-fx-background-radius: 25px;
 	-fx-border-radius: 25px;
+	-fx-font-family: Dubai;
+	-fx-font-size: 20px;
 }
 
 #financePayTab .tab{
@@ -170,7 +202,7 @@
 #financePayTab .tab .tab-label{
 	-fx-text-fill: #FFF;
 	-fx-font-family: Dubai;
-	-fx-font-size: 20px;
+	-fx-font-size: 15px;
 }
 
 .tab-pane .tab-header-background{
@@ -181,7 +213,7 @@
 .tab-pane .tab-content-area{
 	-fx-border-color: #a98539;
 	-fx-border-width: 2px;
-	-fx-border-radius: 10px 10px 25px 25px;
+	-fx-border-radius: 10px 10px 50px 50px;
 }
 
 #dashGradeTable .table-cell {
@@ -192,3 +224,85 @@
     -fx-padding: 10px;
     -fx-font-weight: bold;
 }
+
+.choice-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #a98539;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-mark-color: #a98539;
+    -fx-padding: 4 8 4 8;
+}
+
+.choice-box .label {
+    -fx-text-fill: #a98539;
+}
+
+.choice-box .menu-item {
+    -fx-padding: 8px 14px;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #a98539;
+    -fx-background-radius: 8;
+}
+
+.choice-box .menu-item:focused,
+.choice-box .menu-item:hover {
+    -fx-background-color: #a98539;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.choice-box > .list-view .list-cell:hover {
+    -fx-background-color: #a98539;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 8;
+}
+
+.choice-box > .list-view .list-cell:selected {
+    -fx-background-color: #a98539;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 8;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #a98539;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1);
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.list-view {
+    -fx-background-color: #a98539;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-padding: 15;
+    -fx-font-family: "Dubai";
+    -fx-font-size: 20px;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 10 10;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-max-width: 90%;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.list-view .list-cell:filled:selected,
+.list-view .list-cell:filled:selected:focused {
+    -fx-background-color: white;
+    -fx-text-fill: #a98539;
+    -fx-font-weight: bold;
+}
+
+
+
+
+
+
+
